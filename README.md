@@ -7,7 +7,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 scope = ['https://spreadsheets.google.com/feeds']
 
 #현재 스프레드시트의 키 파일의 경로능 (구글 드라이브 api를 사용 허가 받아야 함)
-json_file_name = '/Users/ihyewon/Downloads/user_key.json'
+json_file_name = '/Users/macname/Downloads/user_key.json'
 credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_name, scope)
 gc = gspread.authorize(credentials)
 
