@@ -6,7 +6,7 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 scope = ['https://spreadsheets.google.com/feeds']
 
-#현재 스프레드시트의 키 파일의 경로 (구글 드라이브 api를 사용 허가 받아야 함)
+#현재 스프레드시트의 키 파일의 경로 (구글 드라이브 api를 사용 허가 받아야 함) - 맥os 기준
 json_file_name = '/Users/macname/Downloads/user_key.json'
 credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_name, scope)
 gc = gspread.authorize(credentials)
@@ -18,7 +18,7 @@ doc = gc.open_by_url(spreadsheet_url)
 #open sheet
 worksheet = doc.worksheet('시1')
 
-
+#('셀위치', '내용')
 #insert 회사 이름
 worksheet.update_acell('B4', '회사 이름')
 #insert 견적서 보낸 날
