@@ -1,4 +1,4 @@
-# study
+# 구글 스프레드시트 견적서 자동화
 
 #-*-coding:utf-8-*-
 #pip install gspread, pip install --upgrade oauth2client <- 파이참 Terminal에서 설치 후 사용 가능
