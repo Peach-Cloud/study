@@ -16,7 +16,7 @@ spreadsheet_url = '스프레드시트의 url'
 #open doc
 doc = gc.open_by_url(spreadsheet_url)
 #open sheet
-worksheet = doc.worksheet('시1')
+worksheet = doc.worksheet('시트1')
 
 #('셀위치', '내용')
 #insert 회사 이름
