@@ -1,2 +1,2 @@
-# studying
+# study
 my first repository
