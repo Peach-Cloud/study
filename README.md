@@ -12,7 +12,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(json_file_name, s
 gc = gspread.authorize(credentials)
 
 #스프레드시트의 url (링크가 있는 모든 이에게 공개로 전환해야하는 것 주의)
-spreadsheet_url = 'https://docs.google.com/spreadsheets/d/18tvvA0-GO_yYtZzJDu4GKmnd0LX9AISO5_roe-hBhvc/edit#gid=0'
+spreadsheet_url = '스프레드시트 url'
 #open doc
 doc = gc.open_by_url(spreadsheet_url)
 #open sheet
